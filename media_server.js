@@ -11,7 +11,8 @@ const io = socketIo(server, {
         methods: ["GET", "POST"],
         allowedHeaders: ["my-custom-header"],
         credentials: true
-    }
+    },
+    allowEIO3: true
 });
 
 const kurentoUri = 'ws://localhost:8888/kurento';
